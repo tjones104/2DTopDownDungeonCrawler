@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - SpawnPoint
+  - Rooms
   - Enemy
   - Environment
   layers:
@@ -15,12 +17,12 @@ TagManager:
   - UI
   - 
   - 
-  - Wall
-  - Ground
   - Player
   - Enemy
   - Environment
-  - AI
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -42,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Top
+    uniqueID: 440020121
     locked: 0
