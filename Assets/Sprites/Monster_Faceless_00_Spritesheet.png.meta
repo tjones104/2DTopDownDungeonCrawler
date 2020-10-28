@@ -1,73 +1,40 @@
 fileFormatVersion: 2
-guid: 9f18ff1b670a449478cdca90c0773f55
+guid: cf1498d9677312f4caaa33367cb66cff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5940275043981014862
-    second: Monster_Faceless_00_Spritesheet_0
+      213: -2769146492129560738
+    second: Monster_Faceless_00_SpriteSheet2_0
   - first:
-      213: -5145633464245518001
-    second: Monster_Faceless_00_Spritesheet_1
+      213: 3701195396729961006
+    second: Monster_Faceless_00_SpriteSheet2_1
   - first:
-      213: -5462769344627546542
-    second: Monster_Faceless_00_Spritesheet_2
+      213: -955474303619376859
+    second: Monster_Faceless_00_SpriteSheet2_2
   - first:
-      213: -3088193026049665411
-    second: Monster_Faceless_00_Spritesheet_3
+      213: -5974232519977795092
+    second: Monster_Faceless_00_SpriteSheet2_3
   - first:
-      213: 5070028965360683920
-    second: Monster_Faceless_00_Spritesheet_4
+      213: -7356482350760699968
+    second: Monster_Faceless_00_SpriteSheet2_4
   - first:
-      213: 173320215389338428
-    second: Monster_Faceless_00_Spritesheet_5
+      213: -7498815498625206540
+    second: Monster_Faceless_00_SpriteSheet2_5
   - first:
-      213: -547396546997220945
-    second: Monster_Faceless_00_Spritesheet_6
+      213: 6750007315380831812
+    second: Monster_Faceless_00_SpriteSheet2_6
   - first:
-      213: -5179210638329492055
-    second: Monster_Faceless_00_Spritesheet_7
+      213: -6894048062604683946
+    second: Monster_Faceless_00_SpriteSheet2_7
   - first:
-      213: 3818310567257405100
-    second: Monster_Faceless_00_Spritesheet_8
+      213: -8466457452594945550
+    second: Monster_Faceless_00_SpriteSheet2_8
   - first:
-      213: 1430037863623462800
-    second: Monster_Faceless_00_Spritesheet_9
+      213: -9099309901559652656
+    second: Monster_Faceless_00_SpriteSheet2_9
   - first:
-      213: -6575467742196842239
-    second: Monster_Faceless_00_Spritesheet_10
-  - first:
-      213: -2035364119412878336
-    second: Monster_Faceless_00_Spritesheet_0
-  - first:
-      213: 1983526164803001126
-    second: Monster_Faceless_00_Spritesheet_1
-  - first:
-      213: -526996298731749204
-    second: Monster_Faceless_00_Spritesheet_2
-  - first:
-      213: -5978307863204465448
-    second: Monster_Faceless_00_Spritesheet_3
-  - first:
-      213: 4674201048505425451
-    second: Monster_Faceless_00_Spritesheet_4
-  - first:
-      213: -515566355175616004
-    second: Monster_Faceless_00_Spritesheet_5
-  - first:
-      213: -6175808244441316238
-    second: Monster_Faceless_00_Spritesheet_6
-  - first:
-      213: -8809083641017112039
-    second: Monster_Faceless_00_Spritesheet_7
-  - first:
-      213: -7398647542167002453
-    second: Monster_Faceless_00_Spritesheet_8
-  - first:
-      213: -6540180121518735779
-    second: Monster_Faceless_00_Spritesheet_9
-  - first:
-      213: -6446308209074768904
-    second: Monster_Faceless_00_Spritesheet_10
+      213: 9098644909974803498
+    second: Monster_Faceless_00_SpriteSheet2_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -155,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_0
+      name: Monster_Faceless_00_SpriteSheet2_0
       rect:
         serializedVersion: 2
         x: 15
@@ -169,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 004d1d10e1fe0c3e0800000000000000
-      internalID: -2035364119412878336
+      spriteID: e57399ddfe30299d0800000000000000
+      internalID: -2769146492129560738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_1
+      name: Monster_Faceless_00_SpriteSheet2_1
       rect:
         serializedVersion: 2
         x: 60
@@ -190,19 +157,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62b96c7a986e68b10800000000000000
-      internalID: 1983526164803001126
+      spriteID: e2a76628a994d5330800000000000000
+      internalID: 3701195396729961006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_2
+      name: Monster_Faceless_00_SpriteSheet2_2
       rect:
         serializedVersion: 2
         x: 105
         y: 0
-        width: 31
+        width: 29
         height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -211,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca0062098abbfa8f0800000000000000
-      internalID: -526996298731749204
+      spriteID: 529d0c4ee297db2f0800000000000000
+      internalID: -955474303619376859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_3
+      name: Monster_Faceless_00_SpriteSheet2_3
       rect:
         serializedVersion: 2
         x: 148
@@ -232,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d4f5cf3ca8c80da0800000000000000
-      internalID: -5978307863204465448
+      spriteID: ce103290d23471da0800000000000000
+      internalID: -5974232519977795092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_4
+      name: Monster_Faceless_00_SpriteSheet2_4
       rect:
         serializedVersion: 2
         x: 194
@@ -253,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e9ce0b6191ed040800000000000000
-      internalID: 4674201048505425451
+      spriteID: 0c75a7e374688e990800000000000000
+      internalID: -7356482350760699968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_5
+      name: Monster_Faceless_00_SpriteSheet2_5
       rect:
         serializedVersion: 2
         x: 238
@@ -274,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf15d9da12758d8f0800000000000000
-      internalID: -515566355175616004
+      spriteID: 4f63040d80bdee790800000000000000
+      internalID: -7498815498625206540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_6
+      name: Monster_Faceless_00_SpriteSheet2_6
       rect:
         serializedVersion: 2
         x: 285
@@ -295,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 274852d5f1f1b4aa0800000000000000
-      internalID: -6175808244441316238
+      spriteID: 4460098e3e7dcad50800000000000000
+      internalID: 6750007315380831812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_7
+      name: Monster_Faceless_00_SpriteSheet2_7
       rect:
         serializedVersion: 2
         x: 330
@@ -316,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a687cd919dfb580800000000000000
-      internalID: -8809083641017112039
+      spriteID: 6555af330db6350a0800000000000000
+      internalID: -6894048062604683946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_8
+      name: Monster_Faceless_00_SpriteSheet2_8
       rect:
         serializedVersion: 2
         x: 373
@@ -337,14 +304,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba2a1d69249b25990800000000000000
-      internalID: -7398647542167002453
+      spriteID: 2f1ae18ddc9118a80800000000000000
+      internalID: -8466457452594945550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_9
+      name: Monster_Faceless_00_SpriteSheet2_9
       rect:
         serializedVersion: 2
         x: 418
@@ -358,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5efdc1b4dc9c35a0800000000000000
-      internalID: -6540180121518735779
+      spriteID: 0de9750dad1c8b180800000000000000
+      internalID: -9099309901559652656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Monster_Faceless_00_Spritesheet_10
+      name: Monster_Faceless_00_SpriteSheet2_10
       rect:
         serializedVersion: 2
         x: 463
@@ -379,8 +346,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f3f96d76dc1a86a0800000000000000
-      internalID: -6446308209074768904
+      spriteID: a24d674c651e44e70800000000000000
+      internalID: 9098644909974803498
       vertices: []
       indices: 
       edges: []
