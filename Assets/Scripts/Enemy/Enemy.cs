@@ -31,12 +31,14 @@ public class Enemy : MonoBehaviour
 
         if (health <=0)
         {
+            gameObject.GetComponent<RandomDrop>().dropRandomItem();
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Debug.Log("Enemy Dead");
             Destroy(gameObject);
         }
        
     }
+
 
     public void TakeDamage(int damage)
     {

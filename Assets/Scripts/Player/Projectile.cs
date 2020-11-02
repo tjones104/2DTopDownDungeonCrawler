@@ -8,10 +8,9 @@ public class Projectile : MonoBehaviour
     public float speed = 20f;
     public float lifeTime;
     public float distance;
-    public int damage;
+    public int baseDamage;
+    public int currentDamage;
     public LayerMask whatIsSolid;
-    
-
 
    
     void Start()
@@ -27,7 +26,7 @@ public class Projectile : MonoBehaviour
             if(hitInfo.collider.CompareTag("Enemy"))
             {
                 Debug.Log("Enemy takes damage!");
-                hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
+                hitInfo.collider.GetComponent<Enemy>().TakeDamage(currentDamage);
                 DestroyProjectile();
             }
             if(hitInfo.collider.CompareTag("Environment"))
@@ -43,5 +42,17 @@ public class Projectile : MonoBehaviour
      void DestroyProjectile()
     {   
         Destroy(gameObject);
+    }
+
+    public int getDamage()
+    {
+        return baseDamage;
+    }
+
+    public void setDamage(int newDamage)
+    {
+        
+        currentDamage = newDamage;
+        Debug.Log("New damage " + currentDamage);
     }
 }
