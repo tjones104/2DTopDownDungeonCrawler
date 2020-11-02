@@ -371,14 +371,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2013232134}
-        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
-        m_MethodName: TakeTenDamage
-        m_Mode: 1
+      - m_Target: {fileID: 1597230612}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: takeDamage
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -637,6 +637,7 @@ MonoBehaviour:
     type: 3}
   offset: -90
   startTimeBtwShots: 0.1
+<<<<<<< Updated upstream
 --- !u!43 &1098999085
 Mesh:
   m_ObjectHideFlags: 0
@@ -801,6 +802,8 @@ Mesh:
     offset: 0
     size: 0
     path: 
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1290960608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,9 +1224,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23d7962be4189fe438fdb52a102e275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  invincibilityDurationSeconds: 1
+  invincibilityDeltaTime: 1
+>>>>>>> Stashed changes
   baseMoveSpeed: 10
   rb: {fileID: 1597230613}
   animator: {fileID: 1597230615}
+  currentHealth: 60
+  maximumHealth: 60
+  hearts: {fileID: 2013232134}
 --- !u!50 &1597230613
 Rigidbody2D:
   serializedVersion: 4
@@ -1376,6 +1387,170 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &1713156966
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 54
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 20
+    localAABB:
+      m_Center: {x: 0.05056089, y: -0.011309624, z: 0}
+      m_Extent: {x: 0.37586385, y: 0.61467266, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000100020000000300010004000300000005000300040005000600030007000600050007000800060008000700090002000a00000000000b00040001000c00020003000d00010006000e00030004000f000500050010000700080011000600070012000900090013000800
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 20
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 880
+    _typelessdata: 5035703ea0d0193f000000001bed7cbf02351ebe00000000000000805035703ea0d0193f5035703ea0d0193f5854da3e604020bf00000000ef60303c33fc7f3f00000080000000805854da3e604020bf5854da3e604020bf8037a93e00f84dbc000000001bed7cbf02351ebe00000000000000805854da3e604020bf5035703ea0d0193f900ff93d50691fbf00000000ef60303c33fc7f3f000000800000008020993bbe40921ebf5854da3e604020bf80bff03c50231a3f00000000717cc9bbc3fe7fbf00000000000000805035703ea0d0193f700534be00761a3f700534be00761a3f00000000717cc9bbc3fe7fbf0000000000000080700534be00761a3f700534be00761a3f20993bbe40921ebf00000000835d073fa548593f000000800000008020993bbe40921ebf20993bbe40921ebf6a4880be006c143d000000000bce7d3fbecf05be0000008000000080700534be00761a3f1c8ea6be80e807bf562d82be603d13bf00000000835d073fa548593f00000080000000801c8ea6be80e807bf20993bbe40921ebf1c8ea6be80e807bf000000000bce7d3fbecf05be00000080000000801c8ea6be80e807bf1c8ea6be80e807bf8037a93e00f84dbc000000001bed7cbf02351ebe00000000000000805854da3e604020bf5035703ea0d0193f5035703ea0d0193f00000000717cc9bbc3fe7fbf00000000000000805035703ea0d0193f5035703ea0d0193f5854da3e604020bf000000001bed7cbf02351ebe00000000000000805854da3e604020bf5854da3e604020bf900ff93d50691fbf00000000ef60303c33fc7f3f000000800000008020993bbe40921ebf5854da3e604020bf20993bbe40921ebf00000000ef60303c33fc7f3f000000800000008020993bbe40921ebf20993bbe40921ebf80bff03c50231a3f00000000717cc9bbc3fe7fbf00000000000000805035703ea0d0193f700534be00761a3f700534be00761a3f000000000bce7d3fbecf05be0000008000000080700534be00761a3f700534be00761a3f562d82be603d13bf00000000835d073fa548593f00000080000000801c8ea6be80e807bf20993bbe40921ebf6a4880be006c143d000000000bce7d3fbecf05be0000008000000080700534be00761a3f1c8ea6be80e807bf1c8ea6be80e807bf00000000835d073fa548593f00000080000000801c8ea6be80e807bf1c8ea6be80e807bf
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.05056089, y: -0.011309624, z: 0}
+    m_Extent: {x: 0.37586385, y: 0.61467266, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &2013232133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,9 +1582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0923120219c7d5439c7164f261beba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 60
-  maximumHealth: 60
   damage: 0
+  player: {fileID: 1597230612}
   frameRT: {fileID: 2013232137}
   fillRT: {fileID: 53173554}
   fillImage: {fileID: 53173555}
@@ -1591,6 +1765,7 @@ MonoBehaviour:
     type: 3}
   IsMoving: 0
   animator: {fileID: 2086227546}
+  damage: 10
 --- !u!114 &2086227543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,8 +1791,13 @@ MonoBehaviour:
   - {x: -0.17580199, y: 0.60336304, z: 0}
   - {x: -0.32530296, y: -0.5308914, z: 0}
   m_ShapePathHash: 1781200955
+<<<<<<< Updated upstream
   m_Mesh: {fileID: 1098999085}
   m_InstanceId: 19042
+=======
+  m_Mesh: {fileID: 1713156966}
+  m_InstanceId: 19070
+>>>>>>> Stashed changes
 --- !u!61 &2086227544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1628,7 +1808,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.008301735, y: -0.01988697}
@@ -1799,7 +1979,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Take Damage Tester
 --- !u!222 &2128369225
 CanvasRenderer:
   m_ObjectHideFlags: 0
