@@ -371,14 +371,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2013232134}
-        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
-        m_MethodName: TakeTenDamage
-        m_Mode: 1
+      - m_Target: {fileID: 1597230612}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: takeDamage
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -637,7 +637,7 @@ MonoBehaviour:
     type: 3}
   offset: -90
   startTimeBtwShots: 0.1
---- !u!43 &1098999085
+--- !u!43 &808864858
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1221,9 +1221,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23d7962be4189fe438fdb52a102e275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invincibilityDurationSeconds: 1
+  invincibilityDeltaTime: 1
   baseMoveSpeed: 10
   rb: {fileID: 1597230613}
   animator: {fileID: 1597230615}
+  currentHealth: 60
+  maximumHealth: 60
+  hearts: {fileID: 2013232134}
 --- !u!50 &1597230613
 Rigidbody2D:
   serializedVersion: 4
@@ -1407,9 +1412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0923120219c7d5439c7164f261beba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 60
-  maximumHealth: 60
   damage: 0
+  player: {fileID: 1597230612}
   frameRT: {fileID: 2013232137}
   fillRT: {fileID: 53173554}
   fillImage: {fileID: 53173555}
@@ -1591,6 +1595,7 @@ MonoBehaviour:
     type: 3}
   IsMoving: 0
   animator: {fileID: 2086227546}
+  damage: 10
 --- !u!114 &2086227543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,8 +1621,8 @@ MonoBehaviour:
   - {x: -0.17580199, y: 0.60336304, z: 0}
   - {x: -0.32530296, y: -0.5308914, z: 0}
   m_ShapePathHash: 1781200955
-  m_Mesh: {fileID: 1098999085}
-  m_InstanceId: 19042
+  m_Mesh: {fileID: 808864858}
+  m_InstanceId: 19498
 --- !u!61 &2086227544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1628,7 +1633,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.008301735, y: -0.01988697}
