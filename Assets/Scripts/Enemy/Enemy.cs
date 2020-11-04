@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public GameObject deathEffect;
     public bool IsMoving;
     public Animator animator;
+    public int damage = 10;
 
     void Update()
     {
@@ -43,5 +44,14 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+    }
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("Player is colliding");
+            collision.gameObject.GetComponent<PlayerController>().takeDamage(damage);
+        }
     }
 }

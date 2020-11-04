@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    private bool isInvincible = false;
+    [SerializeField] private float invincibilityDurationSeconds;
+    [SerializeField] private float invincibilityDeltaTime;
     
     public float baseMoveSpeed = 10f;
     private float currentMoveSpeed;
@@ -12,6 +14,10 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
+    
+    public int currentHealth = 60;
+    public int maximumHealth = 60;
+    public HealthBar hearts;
 
     private CharacterInventory characterInventory;
 
@@ -112,6 +118,51 @@ public class PlayerController : MonoBehaviour
         gO.GetComponent<Rigidbody2D>().AddForce(randomDir * 5f, ForceMode2D.Impulse);
         yield return new WaitForSeconds(waitTime);
         gO.GetComponent<BoxCollider2D>().enabled = true;
+    }
+    
+    
+    //Damage and Death
+    public void ApplyDeath()
+    {
+        //gameOver.EndGame();
+        Destroy(gameObject);
+    }
+
+    private bool checkDeath()
+    {
+        if (currentHealth <= 0)
+        {
+            ApplyDeath();
+            return true;
+        }
+        return false;
+    }
+
+    private IEnumerator InvincibilityFrames()
+    {
+        Debug.Log("Player is invincible");
+        isInvincible = true;
+
+        for (float i = 0; i < invincibilityDurationSeconds; i += invincibilityDeltaTime)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(255f,0f,0f,0.7f);
+            yield return new WaitForSeconds(invincibilityDeltaTime);
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(255f,255f,255f,1f);
+            yield return new WaitForSeconds(invincibilityDeltaTime);
+        }
+        isInvincible = false;
+    }
+
+    public void takeDamage(int amount)
+    {
+        if (isInvincible) return;
+
+        currentHealth -= amount;
+        hearts.SetFill((float)currentHealth/maximumHealth);
+        if (checkDeath())
+            return;
+        StartCoroutine(InvincibilityFrames());
+
     }
     
 }
