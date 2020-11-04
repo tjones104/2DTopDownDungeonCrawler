@@ -11,6 +11,13 @@ public class Enemy : MonoBehaviour
     public bool IsMoving;
     public Animator animator;
     public int damage = 10;
+    public Transform player;
+    public float targetRange;
+
+    void Start()
+    {
+        aiPath.canSearch = false;
+    }
 
     void Update()
     {
@@ -36,10 +43,22 @@ public class Enemy : MonoBehaviour
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Debug.Log("Enemy Dead");
             Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }
-       
+
+        FindTarget();
     }
 
+    private void FindTarget()
+    {
+        Debug.Log(Vector3.Distance(transform.position, player.position));
+        float targetRange = 14f;
+        if(Vector3.Distance(transform.position, player.position) < targetRange)
+        {
+            
+            aiPath.canSearch = true;
+        }
+    }
 
     public void TakeDamage(int damage)
     {
