@@ -33,7 +33,9 @@ public class RandomDrop : MonoBehaviour
         Item item = getRandomItem();
         if(item != null)
         {
+            Vector2 randomDir = Random.insideUnitCircle;
             GameObject gO = GameObject.Instantiate(item.itemPrefab, gameObject.transform.position, item.itemPrefab.transform.rotation);
+            gO.GetComponent<Rigidbody2D>().AddForce(randomDir * 5f, ForceMode2D.Impulse);
         }
     }
 

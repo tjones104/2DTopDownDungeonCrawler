@@ -9,6 +9,7 @@ public abstract class Item : ScriptableObject
     public int amount;
 
     public GameObject itemPrefab;
+    public Sprite itemSprite;
 
     public abstract float getStats();
 }

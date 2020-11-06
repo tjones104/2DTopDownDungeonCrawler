@@ -5,12 +5,35 @@ using UnityEngine;
 public class CharacterInventory
 {
     private List<ItemInInventory> itemList;
+    private Inventory inventory;
+
+    private int maxInventorySpace = 10;
+    private int remainingInventorySpace;
 
     public CharacterInventory()
     {
         itemList = new List<ItemInInventory>();
-
+        remainingInventorySpace = maxInventorySpace;
         Debug.Log("Inv works");
+    }
+
+    public void setInv(Inventory inventory)
+    {
+        this.inventory = inventory;
+    }
+
+    public bool isFull()
+    {
+        if(remainingInventorySpace > 0)
+        {
+            return false;
+        }
+        else
+        {
+            Debug.Log("Inventory is full");
+            return true;
+        }
+        //return remainingInventorySpace <= 0;
     }
 
     public ItemInInventory GetItem(string name)
@@ -63,12 +86,16 @@ public class CharacterInventory
         {
             temp.amount += item.amount;
             Debug.Log(item.amount + " more " + item.itemName + " was added to the players inventory.");
+            remainingInventorySpace -= 1;
+            Debug.Log("Inventory space remaining: " + (remainingInventorySpace));
             return true;
         }
         else
         {
             itemList.Add(new ItemInInventory(item, item.amount));
             Debug.Log("New item " + item.itemName + " was added to player inventory.");
+            remainingInventorySpace -= 1;
+            Debug.Log("Inventory space remaining: " + (remainingInventorySpace));
             return true;
         }
         return false;
@@ -90,7 +117,10 @@ public class CharacterInventory
                 itemList.Remove(temp);
                 Debug.Log(temp.item.itemName + " was removed from player inventory.");
             }
+            remainingInventorySpace += 1;
+            Debug.Log("Inventory space remaining: " + (remainingInventorySpace));
             dropItem(temp.item, characterObj);
+            inventory.refreshInventory();
             return true;
         }
         else
@@ -168,5 +198,10 @@ public class CharacterInventory
             Debug.Log("End of inventory");
         }
         Debug.Log("Amount of different items in inventory is " + itemList.Count + " Total amount of items is " + totalItems);
+    }
+
+    public List<ItemInInventory> getList()
+    {
+        return itemList;
     }
 }
