@@ -20,10 +20,13 @@ public class PlayerController : MonoBehaviour
     public HealthBar hearts;
 
     private CharacterInventory characterInventory;
+    [SerializeField] private Inventory inventory;
 
     void Start()
     {
         characterInventory = new CharacterInventory();
+        inventory.setInventory(characterInventory);
+        characterInventory.setInv(inventory);
     }
 
     void Update()
@@ -80,11 +83,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Item"))
+        if(collision.CompareTag("Item") && !characterInventory.isFull())
         {
             add2Inventory(collision.GetComponent<Collectables>().item);
             Destroy(collision.gameObject);
             gameObject.GetComponent<CalculateCharacterStats>().calcAll();
+            inventory.refreshInventory();
         }
     }
 
