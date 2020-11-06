@@ -75,7 +75,7 @@ SpriteShapeRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Color: {r: 0.4675944, g: 0.9150943, b: 0.051797807, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
