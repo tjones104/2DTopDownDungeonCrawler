@@ -89,6 +89,7 @@
      <Compile Include="Assets\Scripts\Items\DamageItem.cs" />
      <Compile Include="Assets\Scripts\RoomGen2\GridController.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
  <HintPath>C:/Users/Tristan/Desktop/Art/Art Ani Game/2DTopDownDungeonCrawler/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
