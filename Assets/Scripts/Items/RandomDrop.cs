@@ -6,6 +6,7 @@ public class RandomDrop : MonoBehaviour
 {
     [SerializeField] private Item IncreaseDamage;
     [SerializeField] private Item MovementUp;
+    [SerializeField] private Item Health;
 
     public Item getRandomItem()
     {
@@ -35,6 +36,16 @@ public class RandomDrop : MonoBehaviour
         {
             Vector2 randomDir = Random.insideUnitCircle;
             GameObject gO = GameObject.Instantiate(item.itemPrefab, gameObject.transform.position, item.itemPrefab.transform.rotation);
+            gO.GetComponent<Rigidbody2D>().AddForce(randomDir * 5f, ForceMode2D.Impulse);
+        }
+
+        //chance to drop health as well
+        int rand = Random.Range(0,9);
+        if(rand > 1)
+        {
+            Debug.Log("Health drops from " + gameObject.name);
+            Vector2 randomDir = Random.insideUnitCircle;
+            GameObject gO = GameObject.Instantiate(Health.itemPrefab, gameObject.transform.position, Health.itemPrefab.transform.rotation);
             gO.GetComponent<Rigidbody2D>().AddForce(randomDir * 5f, ForceMode2D.Impulse);
         }
     }
