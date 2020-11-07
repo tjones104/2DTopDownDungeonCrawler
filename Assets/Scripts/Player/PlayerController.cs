@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
         characterInventory = new CharacterInventory();
         inventory.setInventory(characterInventory);
         characterInventory.setInv(inventory);
+        //delete when calcstats works, when player projectiles work
+        currentMoveSpeed = 10;
+        //delete when calcstats works, when player projectiles work
     }
 
     void Update()
@@ -38,13 +41,17 @@ public class PlayerController : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.Q))
         {
-            characterInventory.removeItem("IncreaseDamage", this.gameObject);
+            heal(10);
         }
-        else if(Input.GetKeyDown(KeyCode.E))
-        {
-            characterInventory.removeItem("MovementUp", this.gameObject);
+        // else if(Input.GetKeyDown(KeyCode.Q))
+        // {
+        //     characterInventory.removeItem("IncreaseDamage", this.gameObject);
+        // }
+        // else if(Input.GetKeyDown(KeyCode.E))
+        // {
+        //     characterInventory.removeItem("MovementUp", this.gameObject);
                 
-        }
+        // }
         //end of test code
 
 
@@ -83,13 +90,34 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Item") && !characterInventory.isFull())
+        if(collision.CompareTag("Item") && collision.GetComponent<Collectables>().item.itemName == "Health")
+        {
+            heal((int)collision.GetComponent<Collectables>().item.getStats());
+            Destroy(collision.gameObject);
+        }
+        else if(collision.CompareTag("Item") && !characterInventory.isFull())
         {
             add2Inventory(collision.GetComponent<Collectables>().item);
             Destroy(collision.gameObject);
             gameObject.GetComponent<CalculateCharacterStats>().calcAll();
             inventory.refreshInventory();
         }
+        
+    }
+
+    public void heal(int healAmount)
+    {
+        Debug.Log("Old health: " + currentHealth);
+        if(currentHealth >= maximumHealth)
+        {
+            currentHealth = maximumHealth;
+        }
+        else
+        {
+            currentHealth += healAmount;
+        }
+        hearts.SetFill((float)currentHealth/maximumHealth);
+        Debug.Log("New Health " + currentHealth);
     }
 
     public CharacterInventory getInventory()
