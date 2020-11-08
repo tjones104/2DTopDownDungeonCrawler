@@ -81,7 +81,7 @@ MonoBehaviour:
   repathRate: 0
   canSearch: 1
   canMove: 1
-  maxSpeed: 10
+  maxSpeed: 8
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -93,7 +93,7 @@ MonoBehaviour:
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 3
-  pickNextWaypointDist: 2.75
+  pickNextWaypointDist: 0.5
   endReachedDistance: 3
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IncreaseDamage: {fileID: 11400000, guid: 5bdd918b9be67e599bceb625630df479, type: 2}
   MovementUp: {fileID: 11400000, guid: fb7fef115cd5f9710b2e1a322b600ae8, type: 2}
+  Health: {fileID: 11400000, guid: 76bdd7748e3ca894da904c79df1505da, type: 2}
 --- !u!114 &5710521090080576174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,9 +140,12 @@ GameObject:
   - component: {fileID: 5710521090873565054}
   - component: {fileID: 5710521090873565055}
   - component: {fileID: 5710521090873565053}
+  - component: {fileID: 641768489375132380}
   - component: {fileID: 5710521090873565042}
   - component: {fileID: 5710521090873565043}
   - component: {fileID: 5710521090873565052}
+  - component: {fileID: 903946237761947622}
+  - component: {fileID: 8217113326645270068}
   m_Layer: 9
   m_Name: Monster_Faceless_00_Spritesheet_0
   m_TagString: Enemy
@@ -247,7 +251,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008301735, y: -0.01988697}
+  m_Offset: {x: -0.010725558, y: -0.012568772}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -258,8 +262,29 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9054191, y: 1.2224216}
+  m_Size: {x: 0.75027347, y: 1.1902217}
   m_EdgeRadius: 0
+--- !u!50 &641768489375132380
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710521090873565041}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!114 &5710521090873565042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,7 +311,7 @@ MonoBehaviour:
   - {x: -0.32530296, y: -0.5308914, z: 0}
   m_ShapePathHash: 1781200955
   m_Mesh: {fileID: 0}
-  m_InstanceId: 191664
+  m_InstanceId: 188114
 --- !u!114 &5710521090873565043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,8 +331,8 @@ MonoBehaviour:
   IsMoving: 0
   animator: {fileID: 5710521090873565055}
   damage: 10
-  player: {fileID: 4245128708784551812, guid: 38eb291736061964594e11871c7e60ff, type: 3}
   targetRange: 14
+  notInRoom: 1
   startTimeBtwShots: 1
   projectile: {fileID: 5112975887177365777, guid: b80869047b3aae84995d9223218a2454,
     type: 3}
@@ -325,3 +350,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IncreaseDamage: {fileID: 11400000, guid: 5bdd918b9be67e599bceb625630df479, type: 2}
   MovementUp: {fileID: 11400000, guid: fb7fef115cd5f9710b2e1a322b600ae8, type: 2}
+  Health: {fileID: 11400000, guid: 76bdd7748e3ca894da904c79df1505da, type: 2}
+--- !u!114 &903946237761947622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710521090873565041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+--- !u!61 &8217113326645270068
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710521090873565041}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.010245472, y: -0.00000011920929}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.90625, y: 1.28125}
+    newSize: {x: 0.29, y: 0.41}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.88575906, y: 1.2578318}
+  m_EdgeRadius: 0

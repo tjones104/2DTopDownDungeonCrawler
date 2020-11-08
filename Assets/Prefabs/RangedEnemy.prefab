@@ -179,8 +179,8 @@ MonoBehaviour:
   IsMoving: 0
   animator: {fileID: 3065122964164527826}
   damage: 10
-  player: {fileID: 0}
   targetRange: 14
+  notInRoom: 1
   startTimeBtwShots: 1
   projectile: {fileID: 5112975887177365777, guid: b80869047b3aae84995d9223218a2454,
     type: 3}
@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IncreaseDamage: {fileID: 11400000, guid: 5bdd918b9be67e599bceb625630df479, type: 2}
   MovementUp: {fileID: 11400000, guid: fb7fef115cd5f9710b2e1a322b600ae8, type: 2}
+  Health: {fileID: 0}
 --- !u!1 &3065122964453562218
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +292,7 @@ MonoBehaviour:
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 3
-  pickNextWaypointDist: 2.75
+  pickNextWaypointDist: 0.5
   endReachedDistance: 5
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
@@ -311,6 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IncreaseDamage: {fileID: 11400000, guid: 5bdd918b9be67e599bceb625630df479, type: 2}
   MovementUp: {fileID: 11400000, guid: fb7fef115cd5f9710b2e1a322b600ae8, type: 2}
+  Health: {fileID: 11400000, guid: 76bdd7748e3ca894da904c79df1505da, type: 2}
 --- !u!114 &3065122964453562219
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -52,21 +52,20 @@ public class Enemy : MonoBehaviour
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Debug.Log("Enemy Dead");
             RoomController.instance.UpdateRooms();
-            Destroy(gameObject);
-            Destroy(transform.parent.gameObject);
+            Death();
         }  
 
         if(notInRoom == false)
         {
             //Debug.Log("Player in the room");
             aiPath.canMove = true;
-            //aiPath.canSearch = true;
+            aiPath.canSearch = true;
         }
         else
         {
             //Debug.Log("Player not the room");
             aiPath.canMove = false;
-            //aiPath.canSearch = false;
+            aiPath.canSearch = false;
         }
 
 
@@ -78,9 +77,6 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         aiPath.canSearch = true;
     }
-
-
-
 
     private void FindTarget()
     {
@@ -111,8 +107,14 @@ public class Enemy : MonoBehaviour
         {
             hit = true;
             StartCoroutine("SwitchColor");
-        }
-        
+        }   
+    }
+
+    public void Death()
+    {
+        RoomController.instance.StartCoroutine(RoomController.instance.RoomCoroutine());
+        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 
     IEnumerator SwitchColor()
@@ -125,10 +127,20 @@ public class Enemy : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if(collision.CompareTag("Player"))
         {
             Debug.Log("Player is colliding");
             collision.gameObject.GetComponent<PlayerController>().takeDamage(damage);
         }
+        if(collision.CompareTag("Enemy"))
+        {
+            Debug.Log("Enemy is colliding");
+            aiPath.repathRate = Random.Range(1f, 2.0f);
+        }
+    }
+    IEnumerator EnemiesCollision()
+    {
+        yield return new WaitForSeconds(1f);
+        aiPath.canMove = true;
     }
 }

@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
 
     public void OpenSettings()
     {
-
+        mainMenu.SetActive(false);
         settingsMenu.SetActive(true);
     }
 
