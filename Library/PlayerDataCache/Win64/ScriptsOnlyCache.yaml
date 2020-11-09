@@ -36,10 +36,9 @@ ScriptsOnlyBuild:
     - DG.Tweening.Core.DOTweenSettings
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
-    Unity.2D.SpriteShape.Runtime.dll:
-    - UnityEngine.U2D.SpriteShapeController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -89,10 +88,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -367,8 +364,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12634}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 13126}
@@ -433,8 +428,6 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceEmpty.unity:
     - Class: 1
@@ -468,8 +461,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12634}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 13126}
@@ -534,8 +525,6 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceEnd.unity:
     - Class: 1
@@ -622,8 +611,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12634}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 13126}
@@ -688,8 +675,6 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceRocks2.unity:
     - Class: 1
@@ -723,8 +708,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12634}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 13126}
@@ -789,8 +772,6 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceRocks3.unity:
     - Class: 1
@@ -824,8 +805,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12634}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 13126}
@@ -890,8 +869,6 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceRocks4.unity:
     - Class: 1
@@ -925,8 +902,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12634}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 13126}
@@ -991,8 +966,6 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceRocks5.unity:
     - Class: 1
@@ -1026,8 +999,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12634}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 13126}
@@ -1092,8 +1063,6 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceRocks6.unity:
     - Class: 1
@@ -1127,8 +1096,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12634}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 13126}
@@ -1193,8 +1160,6 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceStart.unity:
     - Class: 1
