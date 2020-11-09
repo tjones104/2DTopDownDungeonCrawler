@@ -17,5 +17,6 @@ MonoBehaviour:
   amount: 1
   itemPrefab: {fileID: 1026776025445330224, guid: 95d1563aab4e45f70a985bcf162b4203,
     type: 3}
-  itemSprite: {fileID: 21300000, guid: bfa1e7a7fae570a838130dd2ebf2dda0, type: 3}
+  itemSprite: {fileID: 5652415243874522861, guid: 31c846a96fbc8ad4f88842fcceffd256,
+    type: 3}
   health: 10

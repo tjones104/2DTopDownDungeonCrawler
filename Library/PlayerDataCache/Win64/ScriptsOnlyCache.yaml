@@ -145,47 +145,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 11912}
+      Script: {instanceID: 11910}
     - Class: 114
       Script: {instanceID: 11914}
     - Class: 114
       Script: {instanceID: 11958}
     - Class: 114
-      Script: {instanceID: 12158}
+      Script: {instanceID: 12156}
     - Class: 114
-      Script: {instanceID: 12318}
+      Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 12580}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 13128}
+      Script: {instanceID: 12322}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 12582}
     - Class: 114
-      Script: {instanceID: 13736}
+      Script: {instanceID: 12682}
     - Class: 114
-      Script: {instanceID: 14196}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 14480}
+      Script: {instanceID: 13362}
     - Class: 114
-      Script: {instanceID: 15818}
+      Script: {instanceID: 13732}
     - Class: 114
-      Script: {instanceID: 15842}
+      Script: {instanceID: 14188}
     - Class: 114
-      Script: {instanceID: 15924}
+      Script: {instanceID: 14472}
     - Class: 114
-      Script: {instanceID: 16676}
+      Script: {instanceID: 14584}
     - Class: 114
-      Script: {instanceID: 17534}
+      Script: {instanceID: 15812}
     - Class: 114
-      Script: {instanceID: 17642}
+      Script: {instanceID: 15836}
     - Class: 114
-      Script: {instanceID: 20860}
+      Script: {instanceID: 15918}
     - Class: 114
-      Script: {instanceID: 20864}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 20866}
+      Script: {instanceID: 17528}
     - Class: 114
-      Script: {instanceID: 95974}
+      Script: {instanceID: 17634}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -248,75 +248,75 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 12300}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 12336}
+      Script: {instanceID: 12304}
     - Class: 114
-      Script: {instanceID: 12580}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 12658}
+      Script: {instanceID: 12582}
+    - Class: 114
+      Script: {instanceID: 12660}
     - Class: 114
       Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13362}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13536}
+      Script: {instanceID: 13532}
     - Class: 114
-      Script: {instanceID: 13736}
+      Script: {instanceID: 13732}
     - Class: 114
-      Script: {instanceID: 13910}
+      Script: {instanceID: 13906}
     - Class: 114
-      Script: {instanceID: 14248}
+      Script: {instanceID: 14240}
     - Class: 114
-      Script: {instanceID: 14304}
+      Script: {instanceID: 14296}
     - Class: 114
-      Script: {instanceID: 14406}
+      Script: {instanceID: 14398}
     - Class: 114
-      Script: {instanceID: 14590}
+      Script: {instanceID: 14582}
     - Class: 114
-      Script: {instanceID: 14798}
+      Script: {instanceID: 14792}
     - Class: 114
-      Script: {instanceID: 15082}
+      Script: {instanceID: 15078}
     - Class: 114
-      Script: {instanceID: 15214}
+      Script: {instanceID: 15208}
     - Class: 114
-      Script: {instanceID: 15508}
+      Script: {instanceID: 15502}
     - Class: 114
-      Script: {instanceID: 15608}
+      Script: {instanceID: 15602}
     - Class: 114
-      Script: {instanceID: 15632}
+      Script: {instanceID: 15626}
     - Class: 114
-      Script: {instanceID: 15822}
+      Script: {instanceID: 15816}
     - Class: 114
-      Script: {instanceID: 15876}
+      Script: {instanceID: 15870}
     - Class: 114
-      Script: {instanceID: 15888}
+      Script: {instanceID: 15882}
     - Class: 114
-      Script: {instanceID: 16370}
+      Script: {instanceID: 16366}
     - Class: 114
-      Script: {instanceID: 16484}
+      Script: {instanceID: 16480}
     - Class: 114
-      Script: {instanceID: 16870}
+      Script: {instanceID: 16866}
     - Class: 114
-      Script: {instanceID: 17132}
+      Script: {instanceID: 17128}
     - Class: 114
-      Script: {instanceID: 17198}
+      Script: {instanceID: 17192}
     - Class: 114
-      Script: {instanceID: 17474}
+      Script: {instanceID: 17468}
     - Class: 114
-      Script: {instanceID: 17478}
+      Script: {instanceID: 17472}
     - Class: 114
-      Script: {instanceID: 17534}
+      Script: {instanceID: 17528}
     - Class: 114
-      Script: {instanceID: 17566}
+      Script: {instanceID: 17560}
     - Class: 114
-      Script: {instanceID: 17744}
+      Script: {instanceID: 17738}
     - Class: 114
-      Script: {instanceID: 17752}
-    - Class: 114
-      Script: {instanceID: 95974}
+      Script: {instanceID: 17746}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -348,27 +348,77 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 784}
     - Class: 114
-      Script: {instanceID: 16012}
+      Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 20868}
+      Script: {instanceID: 12634}
     - Class: 114
-      Script: {instanceID: 20870}
+      Script: {instanceID: 12640}
     - Class: 114
-      Script: {instanceID: 20874}
+      Script: {instanceID: 13126}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 14940}
+    - Class: 114
+      Script: {instanceID: 14950}
+    - Class: 114
+      Script: {instanceID: 15554}
+    - Class: 114
+      Script: {instanceID: 15682}
+    - Class: 114
+      Script: {instanceID: 15918}
+    - Class: 114
+      Script: {instanceID: 16004}
+    - Class: 114
+      Script: {instanceID: 16204}
+    - Class: 114
+      Script: {instanceID: 16332}
+    - Class: 114
+      Script: {instanceID: 16422}
+    - Class: 114
+      Script: {instanceID: 16656}
+    - Class: 114
+      Script: {instanceID: 16672}
+    - Class: 114
+      Script: {instanceID: 16708}
+    - Class: 114
+      Script: {instanceID: 17102}
+    - Class: 114
+      Script: {instanceID: 17334}
+    - Class: 114
+      Script: {instanceID: 17574}
+    - Class: 114
+      Script: {instanceID: 17614}
+    - Class: 114
+      Script: {instanceID: 17634}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -383,6 +433,8 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceEmpty.unity:
     - Class: 1
@@ -397,27 +449,77 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 784}
     - Class: 114
-      Script: {instanceID: 16012}
+      Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 20868}
+      Script: {instanceID: 12634}
     - Class: 114
-      Script: {instanceID: 20870}
+      Script: {instanceID: 12640}
     - Class: 114
-      Script: {instanceID: 20874}
+      Script: {instanceID: 13126}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 14940}
+    - Class: 114
+      Script: {instanceID: 14950}
+    - Class: 114
+      Script: {instanceID: 15554}
+    - Class: 114
+      Script: {instanceID: 15682}
+    - Class: 114
+      Script: {instanceID: 15918}
+    - Class: 114
+      Script: {instanceID: 16004}
+    - Class: 114
+      Script: {instanceID: 16204}
+    - Class: 114
+      Script: {instanceID: 16332}
+    - Class: 114
+      Script: {instanceID: 16422}
+    - Class: 114
+      Script: {instanceID: 16656}
+    - Class: 114
+      Script: {instanceID: 16672}
+    - Class: 114
+      Script: {instanceID: 16708}
+    - Class: 114
+      Script: {instanceID: 17102}
+    - Class: 114
+      Script: {instanceID: 17334}
+    - Class: 114
+      Script: {instanceID: 17574}
+    - Class: 114
+      Script: {instanceID: 17614}
+    - Class: 114
+      Script: {instanceID: 17634}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -432,6 +534,8 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    - Class: 1971053207
       Script: {instanceID: 0}
     Assets/Scenes/Rooms/EntranceEnd.unity:
     - Class: 1
@@ -457,15 +561,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 784}
     - Class: 114
-      Script: {instanceID: 16012}
+      Script: {instanceID: 14940}
     - Class: 114
-      Script: {instanceID: 20868}
+      Script: {instanceID: 15554}
     - Class: 114
-      Script: {instanceID: 20870}
+      Script: {instanceID: 16004}
     - Class: 114
-      Script: {instanceID: 20874}
+      Script: {instanceID: 16332}
     - Class: 114
-      Script: {instanceID: 245798}
+      Script: {instanceID: 17706}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -516,51 +620,556 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 784}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12632}
+      Script: {instanceID: 12634}
     - Class: 114
-      Script: {instanceID: 12638}
+      Script: {instanceID: 12640}
     - Class: 114
-      Script: {instanceID: 13128}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13362}
     - Class: 114
-      Script: {instanceID: 14480}
+      Script: {instanceID: 14472}
     - Class: 114
-      Script: {instanceID: 14954}
+      Script: {instanceID: 14940}
     - Class: 114
-      Script: {instanceID: 15688}
+      Script: {instanceID: 14950}
     - Class: 114
-      Script: {instanceID: 15924}
+      Script: {instanceID: 15554}
     - Class: 114
-      Script: {instanceID: 16012}
+      Script: {instanceID: 15682}
     - Class: 114
-      Script: {instanceID: 16212}
+      Script: {instanceID: 15918}
     - Class: 114
-      Script: {instanceID: 16426}
+      Script: {instanceID: 16004}
     - Class: 114
-      Script: {instanceID: 16660}
+      Script: {instanceID: 16204}
     - Class: 114
-      Script: {instanceID: 16676}
+      Script: {instanceID: 16332}
     - Class: 114
-      Script: {instanceID: 16712}
+      Script: {instanceID: 16422}
     - Class: 114
-      Script: {instanceID: 17106}
+      Script: {instanceID: 16656}
     - Class: 114
-      Script: {instanceID: 17340}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 17580}
+      Script: {instanceID: 16708}
     - Class: 114
-      Script: {instanceID: 17622}
+      Script: {instanceID: 17102}
     - Class: 114
-      Script: {instanceID: 17642}
+      Script: {instanceID: 17334}
     - Class: 114
-      Script: {instanceID: 20868}
+      Script: {instanceID: 17574}
     - Class: 114
-      Script: {instanceID: 20870}
+      Script: {instanceID: 17614}
     - Class: 114
-      Script: {instanceID: 20874}
+      Script: {instanceID: 17634}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
+    Assets/Scenes/Rooms/EntranceRocks2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 784}
+    - Class: 114
+      Script: {instanceID: 12182}
+    - Class: 114
+      Script: {instanceID: 12634}
+    - Class: 114
+      Script: {instanceID: 12640}
+    - Class: 114
+      Script: {instanceID: 13126}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 14940}
+    - Class: 114
+      Script: {instanceID: 14950}
+    - Class: 114
+      Script: {instanceID: 15554}
+    - Class: 114
+      Script: {instanceID: 15682}
+    - Class: 114
+      Script: {instanceID: 15918}
+    - Class: 114
+      Script: {instanceID: 16004}
+    - Class: 114
+      Script: {instanceID: 16204}
+    - Class: 114
+      Script: {instanceID: 16332}
+    - Class: 114
+      Script: {instanceID: 16422}
+    - Class: 114
+      Script: {instanceID: 16656}
+    - Class: 114
+      Script: {instanceID: 16672}
+    - Class: 114
+      Script: {instanceID: 16708}
+    - Class: 114
+      Script: {instanceID: 17102}
+    - Class: 114
+      Script: {instanceID: 17334}
+    - Class: 114
+      Script: {instanceID: 17574}
+    - Class: 114
+      Script: {instanceID: 17614}
+    - Class: 114
+      Script: {instanceID: 17634}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
+    Assets/Scenes/Rooms/EntranceRocks3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 784}
+    - Class: 114
+      Script: {instanceID: 12182}
+    - Class: 114
+      Script: {instanceID: 12634}
+    - Class: 114
+      Script: {instanceID: 12640}
+    - Class: 114
+      Script: {instanceID: 13126}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 14940}
+    - Class: 114
+      Script: {instanceID: 14950}
+    - Class: 114
+      Script: {instanceID: 15554}
+    - Class: 114
+      Script: {instanceID: 15682}
+    - Class: 114
+      Script: {instanceID: 15918}
+    - Class: 114
+      Script: {instanceID: 16004}
+    - Class: 114
+      Script: {instanceID: 16204}
+    - Class: 114
+      Script: {instanceID: 16332}
+    - Class: 114
+      Script: {instanceID: 16422}
+    - Class: 114
+      Script: {instanceID: 16656}
+    - Class: 114
+      Script: {instanceID: 16672}
+    - Class: 114
+      Script: {instanceID: 16708}
+    - Class: 114
+      Script: {instanceID: 17102}
+    - Class: 114
+      Script: {instanceID: 17334}
+    - Class: 114
+      Script: {instanceID: 17574}
+    - Class: 114
+      Script: {instanceID: 17614}
+    - Class: 114
+      Script: {instanceID: 17634}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
+    Assets/Scenes/Rooms/EntranceRocks4.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 784}
+    - Class: 114
+      Script: {instanceID: 12182}
+    - Class: 114
+      Script: {instanceID: 12634}
+    - Class: 114
+      Script: {instanceID: 12640}
+    - Class: 114
+      Script: {instanceID: 13126}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 14940}
+    - Class: 114
+      Script: {instanceID: 14950}
+    - Class: 114
+      Script: {instanceID: 15554}
+    - Class: 114
+      Script: {instanceID: 15682}
+    - Class: 114
+      Script: {instanceID: 15918}
+    - Class: 114
+      Script: {instanceID: 16004}
+    - Class: 114
+      Script: {instanceID: 16204}
+    - Class: 114
+      Script: {instanceID: 16332}
+    - Class: 114
+      Script: {instanceID: 16422}
+    - Class: 114
+      Script: {instanceID: 16656}
+    - Class: 114
+      Script: {instanceID: 16672}
+    - Class: 114
+      Script: {instanceID: 16708}
+    - Class: 114
+      Script: {instanceID: 17102}
+    - Class: 114
+      Script: {instanceID: 17334}
+    - Class: 114
+      Script: {instanceID: 17574}
+    - Class: 114
+      Script: {instanceID: 17614}
+    - Class: 114
+      Script: {instanceID: 17634}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
+    Assets/Scenes/Rooms/EntranceRocks5.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 784}
+    - Class: 114
+      Script: {instanceID: 12182}
+    - Class: 114
+      Script: {instanceID: 12634}
+    - Class: 114
+      Script: {instanceID: 12640}
+    - Class: 114
+      Script: {instanceID: 13126}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 14940}
+    - Class: 114
+      Script: {instanceID: 14950}
+    - Class: 114
+      Script: {instanceID: 15554}
+    - Class: 114
+      Script: {instanceID: 15682}
+    - Class: 114
+      Script: {instanceID: 15918}
+    - Class: 114
+      Script: {instanceID: 16004}
+    - Class: 114
+      Script: {instanceID: 16204}
+    - Class: 114
+      Script: {instanceID: 16332}
+    - Class: 114
+      Script: {instanceID: 16422}
+    - Class: 114
+      Script: {instanceID: 16656}
+    - Class: 114
+      Script: {instanceID: 16672}
+    - Class: 114
+      Script: {instanceID: 16708}
+    - Class: 114
+      Script: {instanceID: 17102}
+    - Class: 114
+      Script: {instanceID: 17334}
+    - Class: 114
+      Script: {instanceID: 17574}
+    - Class: 114
+      Script: {instanceID: 17614}
+    - Class: 114
+      Script: {instanceID: 17634}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
+    Assets/Scenes/Rooms/EntranceRocks6.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 784}
+    - Class: 114
+      Script: {instanceID: 12182}
+    - Class: 114
+      Script: {instanceID: 12634}
+    - Class: 114
+      Script: {instanceID: 12640}
+    - Class: 114
+      Script: {instanceID: 13126}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 14940}
+    - Class: 114
+      Script: {instanceID: 14950}
+    - Class: 114
+      Script: {instanceID: 15554}
+    - Class: 114
+      Script: {instanceID: 15682}
+    - Class: 114
+      Script: {instanceID: 15918}
+    - Class: 114
+      Script: {instanceID: 16004}
+    - Class: 114
+      Script: {instanceID: 16204}
+    - Class: 114
+      Script: {instanceID: 16332}
+    - Class: 114
+      Script: {instanceID: 16422}
+    - Class: 114
+      Script: {instanceID: 16656}
+    - Class: 114
+      Script: {instanceID: 16672}
+    - Class: 114
+      Script: {instanceID: 16708}
+    - Class: 114
+      Script: {instanceID: 17102}
+    - Class: 114
+      Script: {instanceID: 17334}
+    - Class: 114
+      Script: {instanceID: 17574}
+    - Class: 114
+      Script: {instanceID: 17614}
+    - Class: 114
+      Script: {instanceID: 17634}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -609,13 +1218,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 784}
     - Class: 114
-      Script: {instanceID: 16012}
+      Script: {instanceID: 14940}
     - Class: 114
-      Script: {instanceID: 20868}
+      Script: {instanceID: 15554}
     - Class: 114
-      Script: {instanceID: 20870}
+      Script: {instanceID: 16004}
     - Class: 114
-      Script: {instanceID: 20874}
+      Script: {instanceID: 16332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -669,6 +1278,12 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -679,12 +1294,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
-  - hash:
-      serializedVersion: 2
-      Hash: 4bc4346a71a8df53a6b106f68ef3a190
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 99e4350749f9f03c29d59a1ba72460bf
@@ -753,10 +1362,28 @@ ScriptsOnlyBuild:
     className: HealthItem
   - hash:
       serializedVersion: 2
+      Hash: fc31e4253b430340d3d2531dd6ddc027
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DungeonGenerator
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DungeonCrawlerController
+  - hash:
+      serializedVersion: 2
+      Hash: 364e3cd008459d079ce19ca42999b8d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelLoader
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -877,6 +1504,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 369583cf1bbabe78b76c0bbc47d2664e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DungeonGenerationData
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -1185,6 +1818,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerToggleHistory
   - hash:
       serializedVersion: 2
+      Hash: a28990ef4720e249345d9c6298678c49
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RoomController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Analytics.Editor.dll
     namespaceName: UnityEditor.Analytics
@@ -1231,6 +1870,12 @@ ScriptsOnlyBuild:
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding
     className: AlternativePath
+  - hash:
+      serializedVersion: 2
+      Hash: 8af352a209a5ad4e715437339c2d4ca8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Door
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1339,6 +1984,12 @@ ScriptsOnlyBuild:
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding.Examples
     className: MineBotAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: 196858668a10a907d31097fa20bf8fb6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Room
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -1549,6 +2200,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Analytics.DataPrivacy.dll
     namespaceName: UnityEngine.Analytics
     className: DataPrivacyButton
+  - hash:
+      serializedVersion: 2
+      Hash: 02920782e84e5e39684f2242bbe44f36
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GridController
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -1869,6 +2526,12 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NextLevel
+  - hash:
+      serializedVersion: 2
       Hash: 08705cef837f5d18a4c86b19b1ccf347
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1897,60 +2560,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: fc31e4253b430340d3d2531dd6ddc027
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DungeonGenerator
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DungeonCrawlerController
-  - hash:
-      serializedVersion: 2
-      Hash: 369583cf1bbabe78b76c0bbc47d2664e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DungeonGenerationData
-  - hash:
-      serializedVersion: 2
-      Hash: a28990ef4720e249345d9c6298678c49
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RoomController
-  - hash:
-      serializedVersion: 2
-      Hash: 8af352a209a5ad4e715437339c2d4ca8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Door
-  - hash:
-      serializedVersion: 2
-      Hash: 196858668a10a907d31097fa20bf8fb6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Room
-  - hash:
-      serializedVersion: 2
-      Hash: 02920782e84e5e39684f2242bbe44f36
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GridController
-  - hash:
-      serializedVersion: 2
-      Hash: 364e3cd008459d079ce19ca42999b8d5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LevelLoader
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NextLevel
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
@@ -1960,5 +2569,10 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Rooms/EntranceEnd.unity
   - Assets/Scenes/Rooms/EntranceBasic1.unity
   - Assets/Scenes/Rooms/EntranceRocks1.unity
+  - Assets/Scenes/Rooms/EntranceRocks2.unity
+  - Assets/Scenes/Rooms/EntranceRocks3.unity
+  - Assets/Scenes/Rooms/EntranceRocks4.unity
+  - Assets/Scenes/Rooms/EntranceRocks5.unity
+  - Assets/Scenes/Rooms/EntranceRocks6.unity
   playerPath: C:/Users/Tristan/Desktop/Art/Art Ani Game/2DTopDownDungeonCrawler/Build/Weight
     of Rapacity.exe
