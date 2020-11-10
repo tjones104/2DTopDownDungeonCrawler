@@ -14,8 +14,10 @@ public class Enemy : MonoBehaviour
     public float targetRange;
     GameObject player;
 
-    public bool flying;
-    
+    public bool flyer;
+    public bool melee;
+    public bool ranged;
+
     public bool notInRoom = true;
 
     bool hit = false;
@@ -70,8 +72,16 @@ public class Enemy : MonoBehaviour
             aiPath.canSearch = false;
         }
 
-
-        FindTarget();
+        if(ranged == true)
+        {
+            FindTarget();
+        }
+        
+        if(melee == true)
+        {
+            MeleeAttack();
+        }
+        
     }
 
     public IEnumerator EnemySearch()
@@ -88,7 +98,7 @@ public class Enemy : MonoBehaviour
         {   
             aiPath.canSearch = true;
         }
-        if((Vector3.Distance(transform.position, player.transform.position) < targetRange - 7f) && aiPath.canMove == true && flying == false)
+        if((Vector3.Distance(transform.position, player.transform.position) < targetRange - 7f) && aiPath.canMove == true)
         {
             if(timeBtwShots <= 0)
             {
@@ -99,6 +109,17 @@ public class Enemy : MonoBehaviour
             {
                 timeBtwShots -= Time.deltaTime;
             }
+        }
+    }
+
+    private void MeleeAttack()
+    {
+        //Debug.Log(Vector3.Distance(transform.position, player.transform.position));
+        float targetRange = 2f;
+        if(Vector3.Distance(transform.position, player.transform.position) < targetRange)
+        {
+            animator.SetFloat("Range", Vector3.Distance(transform.position, player.transform.position));
+            StartCoroutine(Waiting());
         }
     }
 
@@ -145,4 +166,19 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(1f);
         aiPath.canMove = true;
     }
+
+
+    IEnumerator Waiting()
+    {
+        aiPath.repathRate = 4f;
+        animator.SetBool("Waiting", true);
+        animator.SetBool("InRange", false);
+        yield return new WaitForSeconds(2f);
+        animator.SetBool("Waiting", false);
+        animator.SetBool("Searching", true);
+        yield return new WaitForSeconds(1f);
+        animator.SetBool("Searching", false);
+    }
+
+
 }

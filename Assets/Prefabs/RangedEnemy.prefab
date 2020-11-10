@@ -311,7 +311,7 @@ MonoBehaviour:
   - {x: -0.32530296, y: -0.5308914, z: 0}
   m_ShapePathHash: 1781200955
   m_Mesh: {fileID: 0}
-  m_InstanceId: 251576
+  m_InstanceId: 30874
 --- !u!114 &5710521090873565043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,7 +332,9 @@ MonoBehaviour:
   animator: {fileID: 5710521090873565055}
   damage: 10
   targetRange: 14
-  flying: 0
+  flyer: 0
+  melee: 0
+  ranged: 1
   notInRoom: 1
   startTimeBtwShots: 1
   projectile: {fileID: 5112975887177365777, guid: b80869047b3aae84995d9223218a2454,

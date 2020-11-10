@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5710521090080576172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 5710521090873565040}
   m_Father: {fileID: 0}
@@ -334,7 +334,9 @@ MonoBehaviour:
   animator: {fileID: 5710521090873565055}
   damage: 10
   targetRange: 14
-  flying: 1
+  flyer: 0
+  melee: 1
+  ranged: 0
   notInRoom: 1
   startTimeBtwShots: 1
   projectile: {fileID: 5112975887177365777, guid: b80869047b3aae84995d9223218a2454,

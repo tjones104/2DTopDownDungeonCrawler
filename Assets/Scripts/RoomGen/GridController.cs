@@ -22,6 +22,11 @@ public class GridController : MonoBehaviour
         room = GetComponentInParent<Room>();
         grid.columns = room.Width - 4;
         grid.rows = room.Height - 4;
+        // if(room.name.Contains("End"))
+        // {
+        //     grid.columns = room.Width - 8;
+        //     grid.rows = room.Height - 8;
+        // }
         GenerateGrid();
     }
 

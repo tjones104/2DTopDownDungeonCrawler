@@ -30,6 +30,7 @@ public class RoomController : MonoBehaviour
     bool spawnedBossRoom = false;
     bool updatedRooms = false;
 
+
     void Awake()
     {
         instance = this;
@@ -175,18 +176,18 @@ public class RoomController : MonoBehaviour
     {
         string[] possibleRooms = new string[] {
             "Empty",
-            "Basic1",
-            "Basic2",
-            "Rocks1",
-            "Rocks2",
-            "Rocks3",
-            "Rocks4",
-            "Rocks5",
-            "Rocks6",
-            "Rocks7",
-            "Rocks8",
-            "Rocks9",
-            "Rocks10",
+            "Basic1"
+            // "Basic2",
+            // "Rocks1",
+            // "Rocks2",
+            // "Rocks3",
+            // "Rocks4",
+            // "Rocks5",
+            // "Rocks6",
+            // "Rocks7",
+            // "Rocks8",
+            // "Rocks9",
+            // "Rocks10",
         };
 
         return possibleRooms[Random.Range(0, possibleRooms.Length)];
@@ -224,6 +225,7 @@ public class RoomController : MonoBehaviour
                     foreach(Door door in room.GetComponentsInChildren<Door>())
                     {
                         door.doorCollider.SetActive(false);
+                        
                     }
                 }
                 else
@@ -255,6 +257,11 @@ public class RoomController : MonoBehaviour
                     foreach(Door door in room.GetComponentsInChildren<Door>())
                     {
                         door.doorCollider.SetActive(false);
+                        if(room.name.Contains("End"))
+                        {
+                            Debug.Log("Boss Dead");
+                            room.transform.GetChild(0).gameObject.SetActive(true);
+                        }
                     }
                 }  
             }
