@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: MovementUp
   m_EditorClassIdentifier: 
   itemName: MovementUp
-  itemDescription: Increases movement speed by 3
+  itemDescription: Increases movement speed by 1
   amount: 1
   itemPrefab: {fileID: 4984924404251606943, guid: 9583517e2a0c2860f896cdac923746a5,
     type: 3}
   itemSprite: {fileID: 21300000, guid: f8d59efea111e084dba475a48a25763f, type: 3}
-  speed: 3
+  speed: 1

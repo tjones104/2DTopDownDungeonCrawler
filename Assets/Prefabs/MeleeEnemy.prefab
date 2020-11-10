@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5710521090080576175}
   - component: {fileID: 5710521090080576174}
   m_Layer: 9
-  m_Name: ChaseEnemy
+  m_Name: MeleeEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
   repathRate: 0
   canSearch: 1
   canMove: 1
-  maxSpeed: 8
+  maxSpeed: 12
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -92,9 +92,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 3
+  slowdownDistance: 5.67
   pickNextWaypointDist: 0.5
-  endReachedDistance: 3
+  endReachedDistance: 1.16
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782955ceb7a4cc95daa75c35cff3b309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncreaseDamage: {fileID: 11400000, guid: 5bdd918b9be67e599bceb625630df479, type: 2}
-  MovementUp: {fileID: 11400000, guid: fb7fef115cd5f9710b2e1a322b600ae8, type: 2}
+  IncreaseDamage: {fileID: 0}
+  MovementUp: {fileID: 0}
   Health: {fileID: 11400000, guid: 76bdd7748e3ca894da904c79df1505da, type: 2}
 --- !u!114 &5710521090080576174
 MonoBehaviour:
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 4245128708784551812, guid: 38eb291736061964594e11871c7e60ff, type: 3}
+  target: {fileID: 3921637298324129035, guid: 0e8a2f0cef10c0d4c878d99f39630548, type: 3}
 --- !u!1 &5710521090873565041
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,9 +145,8 @@ GameObject:
   - component: {fileID: 5710521090873565043}
   - component: {fileID: 5710521090873565052}
   - component: {fileID: 903946237761947622}
-  - component: {fileID: 8217113326645270068}
   m_Layer: 9
-  m_Name: Monster_Faceless_00_Spritesheet_0
+  m_Name: Melee Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,8 +205,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
-  m_Sprite: {fileID: -2769146492129560738, guid: cf1498d9677312f4caaa33367cb66cff,
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 3945408579908939644, guid: 5de68a676d0b9a84ab0a3b7a7e727a34,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -229,7 +228,7 @@ Animator:
   m_GameObject: {fileID: 5710521090873565041}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9c66b94591ab5ca4785ce6d227294d38, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2cec573e853cb9a4b895ff1dc0f57c95, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -245,7 +244,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5710521090873565041}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -255,7 +254,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.90625, y: 1.28125}
+    oldSize: {x: 1.4375, y: 1}
     newSize: {x: 0.29, y: 0.41}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -292,7 +291,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5710521090873565041}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
@@ -304,14 +303,17 @@ MonoBehaviour:
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 00000000992c3a1a
   m_ShapePath:
-  - {x: -0.18320131, y: -0.6194191, z: 0}
-  - {x: 0.42642474, y: -0.6259823, z: 0}
-  - {x: 0.23457837, y: 0.6008396, z: 0}
-  - {x: -0.17580199, y: 0.60336304, z: 0}
-  - {x: -0.32530296, y: -0.5308914, z: 0}
-  m_ShapePathHash: 1781200955
+  - {x: -0.32948288, y: -0.48881066, z: 0}
+  - {x: 0.13814488, y: -0.5069478, z: 0}
+  - {x: 0.40030333, y: -0.37521398, z: 0}
+  - {x: 0.23218258, y: -0.13601983, z: 0}
+  - {x: 0.1875596, y: 0.44410953, z: 0}
+  - {x: -0.17057756, y: 0.4832033, z: 0}
+  - {x: -0.19098854, y: -0.08900076, z: 0}
+  - {x: -0.5865198, y: -0.38460994, z: 0}
+  m_ShapePathHash: -894055671
   m_Mesh: {fileID: 0}
-  m_InstanceId: 81126
+  m_InstanceId: 375406
 --- !u!114 &5710521090873565043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,13 +327,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiPath: {fileID: 5710521090080576168}
-  health: 3
+  health: 10
   deathEffect: {fileID: 4145042396508074359, guid: 2078af525324aa04b8aed11cbf47a27e,
     type: 3}
   IsMoving: 0
   animator: {fileID: 5710521090873565055}
   damage: 10
   targetRange: 14
+  flying: 1
   notInRoom: 1
   startTimeBtwShots: 1
   projectile: {fileID: 5112975887177365777, guid: b80869047b3aae84995d9223218a2454,
@@ -348,8 +351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782955ceb7a4cc95daa75c35cff3b309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IncreaseDamage: {fileID: 11400000, guid: 5bdd918b9be67e599bceb625630df479, type: 2}
-  MovementUp: {fileID: 11400000, guid: fb7fef115cd5f9710b2e1a322b600ae8, type: 2}
+  IncreaseDamage: {fileID: 0}
+  MovementUp: {fileID: 0}
   Health: {fileID: 11400000, guid: 76bdd7748e3ca894da904c79df1505da, type: 2}
 --- !u!114 &903946237761947622
 MonoBehaviour:
@@ -382,29 +385,3 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!61 &8217113326645270068
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5710521090873565041}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.010245472, y: -0.00000011920929}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.90625, y: 1.28125}
-    newSize: {x: 0.29, y: 0.41}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.88575906, y: 1.2578318}
-  m_EdgeRadius: 0

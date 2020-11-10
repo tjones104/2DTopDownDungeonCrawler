@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
     public int damage = 10;
     public float targetRange;
     GameObject player;
+
+    public bool flying;
     
     public bool notInRoom = true;
 
@@ -86,7 +88,7 @@ public class Enemy : MonoBehaviour
         {   
             aiPath.canSearch = true;
         }
-        if((Vector3.Distance(transform.position, player.transform.position) < targetRange - 7f) && aiPath.canMove == true)
+        if((Vector3.Distance(transform.position, player.transform.position) < targetRange - 7f) && aiPath.canMove == true && flying == false)
         {
             if(timeBtwShots <= 0)
             {

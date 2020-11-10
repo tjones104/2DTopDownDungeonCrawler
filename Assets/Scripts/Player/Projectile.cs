@@ -44,7 +44,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            Debug.Log("Player is colliding");
+            Debug.Log("Enemy is colliding");
             collision.gameObject.GetComponent<Enemy>().TakeDamage(currentDamage);
             DestroyProjectile();
         }

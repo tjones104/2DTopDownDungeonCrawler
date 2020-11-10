@@ -88,6 +88,12 @@
      <Compile Include="Assets\Scripts\Items\DamageItem.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\Scripts\RoomGen\NextLevel.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Lantern.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\TutorialNextLevel.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\ShootTrigger.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\ItemTrigger.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\ChestTrigger.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\ControlsTrigger.cs" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
  <HintPath>C:/Users/Tristan/Desktop/Art/Art Ani Game/2DTopDownDungeonCrawler/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>

@@ -8136,8 +8136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 1824051844}
   spawnerData:
-  - name: ChaseEnemy
-    spawnerData: {fileID: 11400000, guid: cb4b070635d54dd4c87f74c23a8a8bdc, type: 2}
+  - name: FlyingEnemy
+    spawnerData: {fileID: 11400000, guid: 4c7b64618fdbdd147a3b62be12b9d445, type: 2}
 --- !u!61 &1525990446
 BoxCollider2D:
   m_ObjectHideFlags: 0
