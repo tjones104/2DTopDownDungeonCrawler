@@ -15,4 +15,4 @@ MonoBehaviour:
   itemToSpawn: {fileID: 3065122964453562218, guid: d3b14f6837c82e04789436aea62d6708,
     type: 3}
   minSpawn: 3
-  maxSpawn: 6
+  maxSpawn: 5

@@ -809,8 +809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 1647018788}
   spawnerData:
-  - name: MeleeEnemy
-    spawnerData: {fileID: 11400000, guid: 549ed902a92f47148b4c58782c344dcf, type: 2}
+  - name: Boss
+    spawnerData: {fileID: 11400000, guid: b2e45486ccf069a4f8280c0c57c4c85b, type: 2}
 --- !u!61 &836309110
 BoxCollider2D:
   m_ObjectHideFlags: 0

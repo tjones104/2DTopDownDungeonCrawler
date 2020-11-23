@@ -11,7 +11,7 @@ public class ShootTrigger : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        Canvas = GameObject.FindGameObjectWithTag("EditorOnly");
+        Canvas = GameObject.FindGameObjectWithTag("UI");
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -26,7 +26,7 @@ public class ShootTrigger : MonoBehaviour
 
     public IEnumerator Fade()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
         Canvas.transform.GetChild(4).gameObject.SetActive(false);
         gameObject.SetActive(false);
     }

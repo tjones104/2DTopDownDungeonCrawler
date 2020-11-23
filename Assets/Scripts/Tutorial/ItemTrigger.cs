@@ -11,7 +11,7 @@ public class ItemTrigger : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        Canvas = GameObject.FindGameObjectWithTag("EditorOnly");
+        Canvas = GameObject.FindGameObjectWithTag("UI");
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -26,7 +26,7 @@ public class ItemTrigger : MonoBehaviour
 
     private IEnumerator Fade()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3f);
         Canvas.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.SetActive(false);
     }

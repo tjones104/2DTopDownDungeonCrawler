@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
+
+    public DeathMenu deathMenu;
+    public GameObject Canvas;
     
     public int currentHealth = 60;
     public int maximumHealth = 60;
@@ -156,7 +159,9 @@ public class PlayerController : MonoBehaviour
     //Damage and Death
     public void ApplyDeath()
     {
-        //gameOver.EndGame();
+        deathMenu.EndGame();
+        Canvas.transform.GetChild(0).gameObject.SetActive(false);
+        Canvas.transform.GetChild(1).gameObject.SetActive(false);
         Destroy(gameObject);
     }
 

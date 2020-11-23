@@ -27,6 +27,7 @@ public class Shooting : MonoBehaviour
         {
                 if(Input.GetMouseButtonDown(0))
             {
+                AudioManager.instance.Play("ThrowDagger");
                 Instantiate(projectile, firePoint.position, transform.rotation);
                 timeBtwShots = startTimeBtwShots;
             }

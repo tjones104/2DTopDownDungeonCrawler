@@ -27,6 +27,12 @@ public class GridController : MonoBehaviour
         //     grid.columns = room.Width - 8;
         //     grid.rows = room.Height - 8;
         // }
+        if(room.name.Contains("Shape1"))
+        {
+            Debug.Log("Yes");
+            grid.columns = room.Width - 8;
+            grid.rows = room.Height - 8;
+        }
         GenerateGrid();
     }
 
@@ -43,7 +49,7 @@ public class GridController : MonoBehaviour
                 go.GetComponent<Transform>().position = new Vector2(x - (grid.columns - grid.horizontalOffset), y - (grid.rows - grid.verticalOffset));
                 go.name = "X: " + x + ", Y: " + y;
                 availablePoints.Add(go.transform.position);
-                go.SetActive(false);
+                //go.SetActive(false);
             }
         }
 
