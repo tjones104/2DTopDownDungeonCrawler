@@ -109,6 +109,7 @@ public class PlayerController : MonoBehaviour
         {
             heal((int)collision.GetComponent<Collectables>().item.getStats());
             Destroy(collision.gameObject);
+            AudioManager.instance.Play("Item");
         }
         else if(collision.CompareTag("Item") && !characterInventory.isFull())
         {
@@ -155,6 +156,7 @@ public class PlayerController : MonoBehaviour
     public void add2Inventory(Item itemGameObject)
     {
         characterInventory.addItem(itemGameObject);
+        AudioManager.instance.Play("Item");
     }
 
     public IEnumerator waiting(GameObject gO)

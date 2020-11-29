@@ -103,6 +103,7 @@ public class Enemy : MonoBehaviour
             if(timeBtwShots <= 0)
             {
                 Instantiate(projectile, transform.position, Quaternion.identity);
+                AudioManager.instance.Play("EnemyProj");
                 timeBtwShots = startTimeBtwShots;
             }
             else
@@ -118,6 +119,7 @@ public class Enemy : MonoBehaviour
         float targetRange = 2f;
         if(Vector3.Distance(transform.position, player.transform.position) < targetRange)
         {
+            AudioManager.instance.Play("ShrimpAttack");
             animator.SetFloat("Range", Vector3.Distance(transform.position, player.transform.position));
             StartCoroutine(Waiting());
         }
@@ -136,6 +138,7 @@ public class Enemy : MonoBehaviour
     public void Death()
     {
         RoomController.instance.StartCoroutine(RoomController.instance.RoomCoroutine());
+        AudioManager.instance.Play("EnemyDeath");
         Destroy(gameObject);
         Destroy(transform.parent.gameObject);
         PlayerScore scoreKeeper = player.GetComponent<PlayerScore>();

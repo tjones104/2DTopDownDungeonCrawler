@@ -24,12 +24,15 @@ public class DeathMenu : MonoBehaviour
 
     public void EndGame()
     {
+        AudioManager.instance.StopPlaying("Main Menu");
+        AudioManager.instance.StopPlaying("Theme");
+        AudioManager.instance.Play("Death");
         gameOverMenuUI.SetActive(true);
         isEndLevel = true;
         Time.timeScale = 0.0f;
-        AudioManager.instance.StopPlaying("Theme");
+        
         PauseMenu.GameIsPaused = true;
-
+        
         totalEnemies = (int)(playerScore.GetKilled());
         // totalLevels = (int)(playerScore.GetCleared());
         // totalBoss = (int)(playerScore.GetCleared());
