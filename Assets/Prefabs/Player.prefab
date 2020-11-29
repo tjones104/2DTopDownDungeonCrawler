@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 3921637298324129122}
   - component: {fileID: 3921637298324129107}
   - component: {fileID: 3921637298324129104}
+  - component: {fileID: 4245128710108854694}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -255,18 +256,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.016597092, y: -0.05399108}
+  m_Offset: {x: -0.06044385, y: -0.45110703}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6875, y: 2.6875}
+    oldSize: {x: 1.59375, y: 2.71875}
     newSize: {x: 1.59375, y: 2.71875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.78716886, y: 1.2964873}
+  m_Size: {x: 0.94063264, y: 1.7599416}
   m_EdgeRadius: 0
 --- !u!95 &3921637298324129122
 Animator:
@@ -304,6 +305,8 @@ MonoBehaviour:
   baseMoveSpeed: 10
   rb: {fileID: 3921637298324129137}
   animator: {fileID: 3921637298324129122}
+  deathMenu: {fileID: 0}
+  Canvas: {fileID: 0}
   currentHealth: 60
   maximumHealth: 60
   hearts: {fileID: 0}
@@ -322,6 +325,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 3930005770943162580, guid: 4206a4d5e0ba46e40b491615e3c1e5e9,
     type: 3}
+--- !u!114 &4245128710108854694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3921637298324129028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58c82f296e7aab418e1c87db0081889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3921637298324129029
 GameObject:
   m_ObjectHideFlags: 0

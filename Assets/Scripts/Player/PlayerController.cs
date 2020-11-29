@@ -25,8 +25,20 @@ public class PlayerController : MonoBehaviour
     private CharacterInventory characterInventory;
     [SerializeField] private Inventory inventory;
 
+    public static PlayerScore instance;
+
     void Start()
     {
+        // if (instance == null)
+        //     instance = this;
+        // else
+        // {
+        //     Destroy(gameObject);
+        //     return;
+        // }
+
+        // DontDestroyOnLoad(gameObject);
+
         characterInventory = new CharacterInventory();
         inventory.setInventory(characterInventory);
         characterInventory.setInv(inventory);

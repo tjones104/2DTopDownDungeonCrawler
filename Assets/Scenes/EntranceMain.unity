@@ -280,21 +280,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2111198988426903765, guid: f255f1dc53639004e9d56fc695269e23,
+    - target: {fileID: 4755445098702711433, guid: f255f1dc53639004e9d56fc695269e23,
         type: 3}
-      propertyPath: m_FontData.m_Font
+      propertyPath: playerScore
       value: 
-      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 4755445098691039302, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 4755445098691039302, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_Text
-      value: You Died
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4245128710108854694}
     - target: {fileID: 4755445098702711434, guid: f255f1dc53639004e9d56fc695269e23,
         type: 3}
       propertyPath: m_Name
@@ -404,46 +394,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755445098702711438, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755445098702711438, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_PixelPerfect
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755445098702711438, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755445098702711438, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755445098702711439, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755445098702711439, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 570
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755445099980385854, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 4755445099980385854, guid: f255f1dc53639004e9d56fc695269e23,
-        type: 3}
-      propertyPath: m_Text
-      value: Return To Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f255f1dc53639004e9d56fc695269e23, type: 3}
@@ -1735,16 +1685,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3921637298324129107, guid: 0e8a2f0cef10c0d4c878d99f39630548,
         type: 3}
-      propertyPath: hearts
-      value: 
-      objectReference: {fileID: 2013232134}
-    - target: {fileID: 3921637298324129107, guid: 0e8a2f0cef10c0d4c878d99f39630548,
-        type: 3}
-      propertyPath: inventory
-      value: 
-      objectReference: {fileID: 2069531288}
-    - target: {fileID: 3921637298324129107, guid: 0e8a2f0cef10c0d4c878d99f39630548,
-        type: 3}
       propertyPath: deathMenu
       value: 
       objectReference: {fileID: 1743098317}
@@ -1753,26 +1693,16 @@ PrefabInstance:
       propertyPath: Canvas
       value: 
       objectReference: {fileID: 2140230286}
-    - target: {fileID: 3921637298324129144, guid: 0e8a2f0cef10c0d4c878d99f39630548,
+    - target: {fileID: 3921637298324129107, guid: 0e8a2f0cef10c0d4c878d99f39630548,
         type: 3}
-      propertyPath: m_Offset.y
-      value: -0.45110703
-      objectReference: {fileID: 0}
-    - target: {fileID: 3921637298324129144, guid: 0e8a2f0cef10c0d4c878d99f39630548,
+      propertyPath: hearts
+      value: 
+      objectReference: {fileID: 2013232134}
+    - target: {fileID: 3921637298324129107, guid: 0e8a2f0cef10c0d4c878d99f39630548,
         type: 3}
-      propertyPath: m_Size.y
-      value: 1.7599416
-      objectReference: {fileID: 0}
-    - target: {fileID: 3921637298324129144, guid: 0e8a2f0cef10c0d4c878d99f39630548,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.06044385
-      objectReference: {fileID: 0}
-    - target: {fileID: 3921637298324129144, guid: 0e8a2f0cef10c0d4c878d99f39630548,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.94063264
-      objectReference: {fileID: 0}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 2069531288}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8a2f0cef10c0d4c878d99f39630548, type: 3}
 --- !u!1 &4245128710108854693 stripped
@@ -1781,6 +1711,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 902354116226972833}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4245128710108854694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4245128710108854694, guid: 0e8a2f0cef10c0d4c878d99f39630548,
+    type: 3}
+  m_PrefabInstance: {fileID: 902354116226972833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4245128710108854693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58c82f296e7aab418e1c87db0081889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4245128710108854770 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3921637298324129107, guid: 0e8a2f0cef10c0d4c878d99f39630548,

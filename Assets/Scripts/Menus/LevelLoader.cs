@@ -8,6 +8,7 @@ public class LevelLoader : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
     public static LevelLoader instance;
+    GameObject player;
 
     void Awake()
     {
@@ -16,6 +17,8 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        // PlayerScore scoreKeeper = player.GetComponent<PlayerScore>();
+        // scoreKeeper.AddClear();
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     } 
 
