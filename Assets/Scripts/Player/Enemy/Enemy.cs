@@ -173,10 +173,10 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Waiting()
     {
-        aiPath.repathRate = 4f;
+        aiPath.repathRate = 2f;
         animator.SetBool("Waiting", true);
         animator.SetBool("InRange", false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         animator.SetBool("Waiting", false);
         animator.SetBool("Searching", true);
         yield return new WaitForSeconds(1f);

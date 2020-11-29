@@ -171,11 +171,19 @@ public class PlayerController : MonoBehaviour
     //Damage and Death
     public void ApplyDeath()
     {
+        animator.SetBool("Death", true);
+        StartCoroutine(DeathEndEvent());
+        //Destroy(gameObject);
+    }
+
+    IEnumerator DeathEndEvent()
+    {
+        yield return new WaitForSeconds(2f);
         deathMenu.EndGame();
         Canvas.transform.GetChild(0).gameObject.SetActive(false);
         Canvas.transform.GetChild(1).gameObject.SetActive(false);
-        Destroy(gameObject);
     }
+
 
     private bool checkDeath()
     {
