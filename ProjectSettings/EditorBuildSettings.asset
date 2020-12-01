@@ -59,4 +59,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rooms/EntranceRocks10.unity
     guid: 7873c3285b2ee4df6af4ea217d355e50
+  - enabled: 1
+    path: Assets/Scenes/Rooms/EntranceRocks11.unity
+    guid: c5c48c314d62345f1a34265c3c518428
+  - enabled: 1
+    path: Assets/Scenes/Rooms/EntranceRocks12.unity
+    guid: 427a786b6b0d74ac3b568b2cce6852e0
+  - enabled: 1
+    path: Assets/Scenes/Rooms/EntranceRocks13.unity
+    guid: c87600c4c764d43a2ba4d73a08649660
+  - enabled: 1
+    path: Assets/Scenes/Rooms/EntranceRocks14.unity
+    guid: 50a6f1a88e1ba4446998441d3b000913
+  - enabled: 1
+    path: Assets/Scenes/Rooms/EntranceRocks15.unity
+    guid: c3a0fa093be7a4d69944bc24c1271f2a
   m_configObjects: {}

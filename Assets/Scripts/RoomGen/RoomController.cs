@@ -187,7 +187,12 @@ public class RoomController : MonoBehaviour
             "Rocks7",
             "Rocks8",
             "Rocks9",
-            "Rocks10"
+            "Rocks10",
+            "Rocks11",
+            "Rocks12",
+            "Rocks13",
+            "Rocks14",
+            "Rocks15"
         };
 
         return possibleRooms[Random.Range(0, possibleRooms.Length)];
