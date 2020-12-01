@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiPath: {fileID: 5710521090080576168}
-  health: 10
+  health: 5
   deathEffect: {fileID: 4145042396508074359, guid: 2078af525324aa04b8aed11cbf47a27e,
     type: 3}
   IsMoving: 0

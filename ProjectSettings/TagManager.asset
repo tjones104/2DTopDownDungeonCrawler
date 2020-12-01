@@ -11,6 +11,7 @@ TagManager:
   - Item
   - Projectile
   - UI
+  - End
   layers:
   - Default
   - TransparentFX

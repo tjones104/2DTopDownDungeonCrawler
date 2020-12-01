@@ -66,6 +66,8 @@ public class DeathMenu : MonoBehaviour
 
     public void RestartLevel()
     {
+        AudioManager.instance.StopPlaying("Death");
+        AudioManager.instance.Play("Theme");
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -73,6 +75,7 @@ public class DeathMenu : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1.0f;
+        AudioManager.instance.StopPlaying("Death");
         AudioManager.instance.Play("Main Menu");
         SceneManager.LoadScene("MainMenu");
     }

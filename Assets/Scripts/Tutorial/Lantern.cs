@@ -18,7 +18,7 @@ public class Lantern : MonoBehaviour
             Destroy(gameObject);
             //Destroy(transform.parent.gameObject);
             //player.GetComponentsInChildren<PlayerController>();
-            player.transform.GetChild(1).gameObject.SetActive(true);
+            player.transform.GetChild(0).gameObject.SetActive(true);
             player.transform.GetChild(2).gameObject.SetActive(false);
         }
     }

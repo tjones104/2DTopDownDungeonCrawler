@@ -13,12 +13,13 @@ public class LevelLoader : MonoBehaviour
     void Awake()
     {
         instance = this;
+        //player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void LoadNextLevel()
     {
-        // PlayerScore scoreKeeper = player.GetComponent<PlayerScore>();
-        // scoreKeeper.AddClear();
+        //PlayerScore scoreKeeper = player.GetComponent<PlayerScore>();
+        //scoreKeeper.AddClear();
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     } 
 
@@ -32,6 +33,7 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(levelIndex);
         yield return new WaitForSeconds(transitionTime);
         transition.SetTrigger("Start");
+        //player.transform.position = new Vector3();
     }
 
 

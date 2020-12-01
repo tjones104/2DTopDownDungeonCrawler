@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
 
     public DeathMenu deathMenu;
     public GameObject Canvas;
-    
+    public bool tutorial;
+
     public int currentHealth = 60;
     public int maximumHealth = 60;
     public HealthBar hearts;
@@ -25,19 +26,34 @@ public class PlayerController : MonoBehaviour
     private CharacterInventory characterInventory;
     [SerializeField] private Inventory inventory;
 
-    public static PlayerScore instance;
+    // Vector3 originalPos;
+
+    // public static PlayerController instance;
 
     void Start()
     {
-        // if (instance == null)
-        //     instance = this;
-        // else
-        // {
-        //     Destroy(gameObject);
-        //     return;
-        // }
+    //     if(tutorial == true)
+    //     {
+    //         Debug.Log("Tutorial True");
+    //     }
+    //     else
+    //     {
+    //          if (instance == null)
+    //         instance = this;
+    //         else
+    //         {
+    //         Destroy(gameObject);
+    //         return;
 
-        // DontDestroyOnLoad(gameObject);
+            
+    //     }
+    //        DontDestroyOnLoad(gameObject);
+        
+    // }
+        
+
+        // originalPos = new Vector3();
+        // Debug.Log(originalPos);
 
         characterInventory = new CharacterInventory();
         inventory.setInventory(characterInventory);
@@ -224,4 +240,12 @@ public class PlayerController : MonoBehaviour
 
     }
     
+    // void OnTriggerEnter(Collider other)
+    // {
+    //   if(other.gameObject.tag == "End")
+    //   {
+    //       gameObject.transform.position = originalPos;
+    //   }
+    
+    // }
 }
