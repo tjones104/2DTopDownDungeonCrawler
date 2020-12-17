@@ -11,7 +11,6 @@
 - Tony Cerda (Artist)
 - Tristan Jones (Lead Engineer / Level Design / Artist)
 
-#### A full understanding of extent of contributions can be seen from the bi-weekly project updates.
 
 ### Main Contributions:
 - Alexander Tran: Created Items and Character Stat System
@@ -22,4 +21,4 @@
 - Tony Cerda: Initial item art
 - Tristan Jones: Designed, animated, coded all of the enemy characters. Polished/Redesigned item art. Implemented precedural generation system and created all initial room layout. Populated some levels.
 
-
+#### A full understanding of extent of contributions can be seen from the bi-weekly project updates.
