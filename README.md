@@ -1,15 +1,15 @@
-# The Weight of Rapacity is a 2D top down dungeon crawler developed by a group of 7 as a project for our Art and Animation class. 
+# The Weight of Rapacity is a 2D top down dungeon crawler developed by a group of 7 as a project for our Intro to Art and Animation class. 
 
 #### Features custom made assets, including art, music, enviromental tilesets.
 
 ### Members & Roles: 
 - Alexander Tran (Engineer) 
-- Carlos Alvarado Ortuno (Sound & Music / Engineer) 
+- Carlos Alvarado Ortuno (Lead Sound & Music Designer / Engineer) 
 - Carson Chen (Lead Artist)
-- Daring Eap (Level Design / Engineer)
+- Daring Eap (Lead Level Designer / Engineer)
 - Ryan Lindenfeld (Team Leader / Engineer / Menus) 
 - Tony Cerda (Artist)
-- Tristan Jones (Lead Engineer / Level Design / Artist)
+- Tristan Jones (Lead Engineer / Level Designer / Artist)
 
 
 ### Main Contributions:
@@ -22,3 +22,5 @@
 - Tristan Jones: Designed, animated, coded all of the enemy characters. Polished/Redesigned item art. Implemented precedural generation system and created all initial room layout. Populated some levels.
 
 #### A full understanding of extent of contributions can be seen from the bi-weekly project updates.
+
+##### Note: This was our first attempt at developing a game and all members except the Lead Artist were inexperienced with pixel art or art in general.
